@@ -9,5 +9,8 @@ Steps to run the program:
 3. Enter: gcc 86toC.c compute.o -o main.exe
 4. Enter: main.exe
    
+ANALYSIS
+
+<img width="602" height="398" alt="image" src="https://github.com/user-attachments/assets/81dd117d-671e-4bd9-8eeb-a7a151b24c8d" />
 
 
