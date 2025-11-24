@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <math.h>
+
 
 // asm function
 extern void compute(double *matrix, int *output, int rows);
@@ -30,7 +32,7 @@ void validate(double *matrix, int *output, int rows)
         double t  = matrix[i*3 + 2];
 
         double acceleration = (Vf - Vi) / t;
-        int expected = (int)(acceleration + 0.5);
+        int expected = (int)llround(acceleration);
 
         printf("Car %d -> asm: %d | expected: %d\n", i, output[i], expected);
     }
@@ -109,7 +111,7 @@ int main(){
             double *matrix = malloc(rows * 3 * sizeof(double));
             int *output = malloc(rows * sizeof(int));
 
-            printf("Testing dataset size of %d rows\n", rows);
+            printf("\nTesting dataset size of %d rows\n", rows);
             fill(matrix, rows);
 
             double time = test(matrix, output, rows);
@@ -128,4 +130,3 @@ int main(){
         return 0;
     }
 }
-
