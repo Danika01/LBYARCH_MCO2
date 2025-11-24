@@ -13,7 +13,7 @@ ANALYSIS
 
 Below is the screenshot of the program output showing mode selection, execution timing, and correctness verification between C and ASM:
 
-<img width="419" height="689" alt="image" src="https://github.com/user-attachments/assets/2ca1572c-056a-4088-b16f-9dbefca1b259" />
+<img width="373" height="682" alt="image" src="https://github.com/user-attachments/assets/aac15407-341d-46a9-8f2d-0351e9422c28" />
 
 The time performance for 10 and 100 rows does not mean the data set takes 0 time to run. The scope of the timer cannot capture the speed and efficiency of small datasets unlike in 1,000 and 10,000. The results show a positive linear relationship, showcasing that as the data increases, the time also increases. Nevertheless, the use of assembly is very efficient for computations with large datasets.
 
