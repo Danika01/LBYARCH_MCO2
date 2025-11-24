@@ -98,7 +98,7 @@ int main(){
     else if(mode == 2)
 	{
 
-        int sizes[] = {10, 100, 1000, 10000, 100000};
+        int sizes[] = {10, 100, 1000, 10000};
         int count = sizeof(sizes) / sizeof(sizes[0]);
 
         srand(time(NULL));
@@ -128,3 +128,4 @@ int main(){
         return 0;
     }
 }
+
